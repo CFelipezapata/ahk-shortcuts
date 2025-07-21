@@ -32,6 +32,14 @@
         Run("slack.exe")
 }
 
+; Win + 5: Notion
+#5::{
+    if WinExist("ahk_exe Notion.exe")
+        WinActivate
+    else
+        Run("C:\Users\" . A_UserName . "\AppData\Local\Programs\Notion\Notion.exe")
+}
+
 ; Alt + Space: Open or focus ChatGPT app
 !Space:: {
     if WinExist("ahk_exe ChatGPT.exe")
