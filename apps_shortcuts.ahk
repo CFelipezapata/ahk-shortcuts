@@ -29,7 +29,7 @@
     if WinExist("ahk_exe slack.exe")
         WinActivate
     else
-        Run("slack.exe")
+        Run("C:\Users\" . A_UserName . "\AppData\Local\slack\slack.exe")
 }
 
 ; Win + 5: Notion
