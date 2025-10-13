@@ -13,7 +13,7 @@
     if WinExist("ahk_exe cursor.exe")
         WinActivate
     else
-        Run("C:\Users\" . A_UserName . "\AppData\Local\Programs\cursor\Cursor.exe")
+        Run("C:\Program Files\cursor\cursor.exe")
 }
 
 ; Win + 3: Chrome
