@@ -59,3 +59,8 @@
         WinActivate("ahk_id " winList[winList.Length])
     }
 }
+
+; Alt + Esc: Cycle between windows of the same app (For keyboards without ` key)
+!Esc::Send("!``")
+
+
