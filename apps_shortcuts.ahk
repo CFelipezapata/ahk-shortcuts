@@ -13,7 +13,7 @@
     if WinExist("ahk_exe cursor.exe")
         WinActivate
     else
-        Run("C:\Program Files\cursor\cursor.exe")
+        Run("C:\Users\" . A_UserName . "\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Cursor\Cursor")
 }
 
 ; Win + 3: Chrome
@@ -62,5 +62,3 @@
 
 ; Alt + Esc: Cycle between windows of the same app (For keyboards without ` key)
 !Esc::Send("!``")
-
-
