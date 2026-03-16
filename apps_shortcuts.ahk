@@ -8,12 +8,12 @@
         Run("wt.exe")
 }
 
-; Win + 2: Cursor IDE
+; Win + 2: VS Code
 #2::{
-    if WinExist("ahk_exe cursor.exe")
+    if WinExist("ahk_exe Code.exe")
         WinActivate
     else
-        Run("C:\Users\" . A_UserName . "\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Cursor\Cursor")
+        Run("C:\Users\" . A_UserName . "\AppData\Local\Programs\Microsoft VS Code\Code.exe")
 }
 
 ; Win + 3: Chrome
@@ -62,3 +62,5 @@
 
 ; Alt + Esc: Cycle between windows of the same app (For keyboards without ` key)
 !Esc::Send("!``")
+
+
